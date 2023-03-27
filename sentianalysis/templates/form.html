@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>SENTIMENTAL ANALYSIS</title>
+<body style="background-color:Black">
+<div>
+<p>
+<h1 style="font-size:300%;color:orange;text-align:center"> What is sentiment analysis?</h1>
+<strong style="font-size:150%;color:#F7BC00">
+<center>      Sentiment analysis (also known as opinion mining, or emotion AI) is a method of analyzing text
+       data to identify its intent. The goal is to automatically recognize and categorize opinions
+       expressed in the text to determine overall sentiment.
+    <br>
+    <font face="Monotype Corsiva" size="6">To understand sentimental analysis in better way enter some text in below input box.......</font>
+</center>
+</strong>
+
+</p>
+</div>
+<pre>
+<img src="/static/s2img1.jpg" style="width:350px;height:310px;"> <img src="/static/s2img2.jpg" style="width:350px;height:310px;"> <img src="/static/s2img3.jpg"  style="width:350px;height:310px;">
+</pre>
+<br>
+<br>
+<br>
+    <form action="/submit" method="post" style="color:">
+        <h2 style="font-size:250%;color: #ebebeb;text-align:center">Sentiment analysis benefits:</h2>
+      <ol style="color:Turquoise">
+         <li>👍 Quickly detect negative comments & respond instantly</li>
+         <li>👍 Improve response times to urgent queries by 65%</li>
+         <li>👍 Take on 20% higher data volume</li>
+         <li>👍 Monitor sentiment about your brand, product, or service in real time</li>
+      </ol>
+  <center>
+      <label for="etext"  style="font-size:250%;color:orange;text-align:center">Play around with our sentiment analyzer, below: </label><br>
+  <input type="text" id=etext name="etext"><br>
+  <button type="submit">Submit</button>
+</center>
+
+    </form>
+<p style="background-color:white">
+{% if output %}
+{{output}}
+{% endif %}
+</p>
+
+
+
+
+
+<img class="plot" src="data:image/png;base64, {{ plot_url }}" >
+
+
+</body>
+</html>
